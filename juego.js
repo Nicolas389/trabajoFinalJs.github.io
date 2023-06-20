@@ -3,14 +3,10 @@ const alto = 400;
 var mapa = document.getElementById("imagen");
 var resultado = document.getElementById("resultado");
 var click = 0;
+var cartel = document.getElementById("ganar");
+var boton = document.getElementById("botonJuego");
+var info = document.getElementById("info");
 
-mapa.addEventListener('click', function(e) {
-    var distancia = getDistance(e, target);
-    var textoDistancia = getDistanceHint(distancia);
-    console.log(distancia);
-    click++;
-    resultado.innerHTML = textoDistancia;
-  })
 
 // numero aleatorio
 var getRandomNumber = size => {
@@ -27,8 +23,11 @@ var getRandomNumber = size => {
   // Devuelve en texto lo cerca o lejos que se esta del tesoro 
   var getDistanceHint = distance => {
     if (distance < 20){
-        return "Ganaste :D numero de clicks: " + click;
-        location.reload();
+        cartel.showModal();
+        info.innerHTML = "Numero de clicks: " + click;
+        boton.addEventListener('click', function(){
+          location.reload();
+        })
     } else if (distance < 30) {
       return "Hirviendo";
     } else if (distance < 40) {
@@ -52,3 +51,12 @@ let target = {
 };
 
 console.log(target);
+
+
+mapa.addEventListener('click', function(e) {
+  var distancia = getDistance(e, target);
+  var textoDistancia = getDistanceHint(distancia);
+  console.log(distancia);
+  click++;
+  resultado.innerHTML = textoDistancia;
+})
