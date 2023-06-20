@@ -155,7 +155,7 @@ function cambiarModoClaro() {
   
     botonOscuro.style.display = "none";
     botonClaro.style.display = "inline";
-    titulo.innerHTML = "Shhh.. Canelita esta durmiendo, no la molestes...";
+    titulo.innerHTML = "Shhh.. Acelguita esta durmiendo, no la molestes...";
     titulo.style.color = "white";
     tiempo.style.color = "#14731C";
     fecha.style.color = "#14731C";
