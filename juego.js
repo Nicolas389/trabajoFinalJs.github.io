@@ -22,7 +22,7 @@ var getRandomNumber = size => {
   
   // Devuelve en texto lo cerca o lejos que se esta del tesoro 
   var getDistanceHint = distance => {
-    if (distance < 20){
+    if (distance < 29){
         cartel.showModal();
         info.innerHTML = "Numero de clicks: " + click;
         boton.addEventListener('click', function(){
