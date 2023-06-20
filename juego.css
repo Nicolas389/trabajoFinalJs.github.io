@@ -1,0 +1,33 @@
+html{
+    padding: 0px;
+    margin: 0px;
+    height: 150px;    
+}
+
+body{
+    background-color: rgb(200, 242, 242);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: flex;
+}
+
+#imagen{
+    width: 600px;
+    height: 400px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#titulo{
+    font-size: 3em;
+}
+
+#resultado{
+    font-size: 2em;
+}
+

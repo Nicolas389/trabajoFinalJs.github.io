@@ -1,0 +1,74 @@
+* { 
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./source/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#cabezal{
+    background-color:  #049cdc;
+    width: 1000px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#CILSA{
+    align-items: center;
+    padding: 30px 0px 0px 50px;
+}
+
+#texto-cabezal{
+    color: white;    
+    padding-top: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+}
+
+#barra{
+    background-color: #e83e8c;
+    width: 1000px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;   
+}
+
+#boton{    
+    background-color:#442794e3;
+    border:#442794e3 ;
+    font-size: 20px;
+    width: 230px;
+}
+
+
+p,a{
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+}
+li{
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+}
+
+#cuerpo{
+    background-color:  rgba(255, 255, 255, 0.887);
+    width: 1000px;
+    height: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+
+#texto-cuerpo{
+    padding: 30px 100px 0px 120px;
+}

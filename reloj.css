@@ -1,0 +1,66 @@
+html{
+    padding: 0px;
+    margin: 0px;
+    height: 150px;    
+}
+
+body{
+    background-image: url("./source/dia.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    min-height: 100vh;
+    }    
+
+    img{
+        height: 60px;
+        width: 140px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }   
+
+    #contenedor{
+        text-align: center;
+        align-items: center;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    #contenedorFecha{
+        background: rgba(0, 0, 0, .5);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding-top: 8px;        
+        font-size: 2em;
+        width: 600px;
+        height: 100px;
+        font-family: 'Orbitron', sans-serif;
+        color: rgb(122, 12, 0);
+        }
+
+    #contenedorHora{
+        background: rgba(0, 0, 0, .5);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12px;
+        padding-top: 1px;
+        padding-bottom: 10px;
+        font-size: 3em;
+        width: 600px;
+        height: 120px;
+        font-family: 'Orbitron', sans-serif;
+        color: rgb(122, 12, 0);
+    }
+
+    #contenedorVolver{
+        margin-top: 120px;
+    }
+
+    #volverInicio{
+        font-size: 1.5em;
+        margin-top: 12px;
+        color: rgba(40, 7, 94);
+    }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reloj</title>
+    <link rel="stylesheet" href="./reloj.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    
+  </head>
+  <body id="body">
+    <div id="contenedor">
+        <h1 id="titulo">¿Te molesta la luz? Cambia al modo oscuro.</h1>
+        <img id="botonOscuro" src="./source/boton noche.png" alt="boton Modo Oscuro" onclick="cambiarModoOscuro()">
+        <img id="botonClaro" src="./source/boton dia.png" style="display:none;" alt="boton Modo Claro" onclick="cambiarModoClaro()">
+
+       
+      <div id="contenedorFecha">
+        <p id="fecha"></p>
+      </div>
+      <div id="contenedorHora">
+        <p id="hora"></p>
+      </div>
+    
+      <div id="contenedorVolver">
+      <a id="volverInicio" href="../index.html"> Pagina de inicio</a>
+    </div>
+    </div>
+
+   
+
+    <script src="./reloj.js"></script>
+  </body>
+</html>
