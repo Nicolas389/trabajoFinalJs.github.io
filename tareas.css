@@ -53,3 +53,15 @@ textarea{
     margin-top: 10px;
     color: rgba(40, 7, 94);
 }
+
+#contenedorReloj{
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 5px 5px 5px 8px;
+    background-color: #271b32;
+}
+
+#fecha,#hora{
+    font-size: 0.8em;
+    color: bisque;
+}

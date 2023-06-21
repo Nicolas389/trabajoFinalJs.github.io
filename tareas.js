@@ -62,4 +62,75 @@ function borrarTarea(title) {
   
 
 
+  (function () {
+    var actualizarHora = function () {
+      var fecha = new Date();
+      // reloj
+      var hora = fecha.getHours(),
+        minuto = fecha.getMinutes(),
+        segundos = fecha.getSeconds(),
+        ampm = " ";
+      if (hora <= 11) {
+        ampm = "AM";
+      } else {
+        ampm = "PM";
+      }
+      if (hora == 0) {
+        hora = "00";
+      }
+      if (minuto < 10) {
+        minuto = "0" + fecha.getMinutes();
+      }
+  
+      if (segundos < 10) {
+        segundos = "0" + fecha.getSeconds();
+      }
+  
+      //fecha
+      var dia = fecha.getDate(),
+        mes = fecha.getMonth(),
+        year = fecha.getFullYear(),
+        nombreDia = fecha.getDay();
+  
+      // arrays
+      var dias = [
+        "Domingo",
+        "Lunes",
+        "Martes",
+        "Miercoles",
+        "Jueves",
+        "Viernes",
+        "Sabado",
+        "Domingo",
+      ];
+      var meses = [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre",
+      ];
+  
+      // p
+      var tiempo = document.getElementById("hora");
+      var fecha = document.getElementById("fecha");
+  
+      //paso de valores
+      tiempo.innerHTML = hora + " : " + minuto + " : " + segundos + " " + ampm;
+      fecha.innerHTML =
+        dias[nombreDia] + " " + dia + " de " + meses[mes] + " del " + year;
+    };
+  
+    actualizarHora();
+  
+    var intervalo = setInterval(actualizarHora, 1000);
+  })();
+
 CrearTarea();
