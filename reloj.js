@@ -124,45 +124,13 @@ function cambiarModoClaro() {
     hora = f.getHours();
 
     if (hora <= 19 && hora >= 6) {
-      var botonOscuro = document.getElementById("botonOscuro"),
-        botonClaro = document.getElementById("botonClaro"),
-        tiempo = document.getElementById("hora"),
-        fecha = document.getElementById("fecha"),
-        cuerpo = document.getElementById("body"),
-        titulo = document.getElementById("titulo"),
-        conFecha = document.getElementById("contenedorFecha"),
-        conHora = document.getElementById("contenedorHora");
 
-      botonOscuro.style.display = "inline";
-      botonClaro.style.display = "none";
-      titulo.innerHTML = "¿Te molesta la luz? Cambia al modo oscuro.";
-      titulo.style.color = "black";
-      tiempo.style.color = "rgb(122, 12, 0)";
-      fecha.style.color = "rgb(122, 12, 0)";
-      conFecha.style.backgroundColor = "rgba(0, 0, 0, .5)";
-      conHora.style.backgroundColor = "rgba(0, 0, 0, .5)";
+      cambiarModoClaro();
 
-      cuerpo.style.backgroundImage = "url('./source/dia.jpg')";
     }else{
-      var botonOscuro = document.getElementById("botonOscuro"),
-      botonClaro = document.getElementById("botonClaro"),
-      tiempo = document.getElementById("hora"),
-      fecha = document.getElementById("fecha"),
-      cuerpo = document.getElementById("body"),
-      titulo = document.getElementById("titulo"),
-      conFecha = document.getElementById("contenedorFecha"),
-      conHora = document.getElementById("contenedorHora");
-  
-    botonOscuro.style.display = "none";
-    botonClaro.style.display = "inline";
-    titulo.innerHTML = "Shhh.. Canelita esta durmiendo, no la molestes...";
-    titulo.style.color = "white";
-    tiempo.style.color = "#14731C";
-    fecha.style.color = "#14731C";
-    conFecha.style.backgroundColor = "rgba(40, 7, 94, .5)";
-    conHora.style.backgroundColor = "rgba(40, 7, 94, .5)";
-  
-    cuerpo.style.backgroundImage = "url('./source/noche.jpg')";
+      
+      cambiarModoOscuro();
+      
     }   
 
   };
