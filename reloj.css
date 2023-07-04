@@ -4,12 +4,14 @@ html{
     height: 150px;    
 }
 
-body{
-    background-image: url("./source/dia.jpg");
+#body{
+    background-image: url("./source/dia2.jpg");
+    background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;    
-    min-height: 100vh;
+    height: 900px;
+    width: 800px;
+    
     }    
 
     img{
@@ -24,6 +26,7 @@ body{
         align-items: center;
         padding-left: auto;
         padding-right: auto;
+        height: 300px;
     }
 
     #contenedorFecha{
