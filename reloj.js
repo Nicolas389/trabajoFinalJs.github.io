@@ -92,6 +92,7 @@ function cambiarModoOscuro() {
   volver.style.color= "#14731C";
 
   cuerpo.style.backgroundImage = "url('./source/noche.jpg')";
+  
 }
 
 function cambiarModoClaro() {

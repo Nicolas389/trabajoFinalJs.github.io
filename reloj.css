@@ -1,16 +1,18 @@
 html{
     padding: 0px;
     margin: 0px;
-    height: 150px;    
+    background: linear-gradient(rgb(89, 138, 191),rgb(229, 230, 232)) ;  
+    height: 800px;
+
 }
 
 #body{
-    background-image: url("./source/dia2.jpg");
-    background-size: 80%;
+    background-image: url("./source/dia.jpg");
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 900px;
-    width: 800px;
+    height: 700px;
+    width: 1700px;
     
     }    
 
