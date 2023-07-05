@@ -76,6 +76,7 @@ function cambiarModoOscuro() {
     tiempo = document.getElementById("hora"),
     fecha = document.getElementById("fecha"),
     cuerpo = document.getElementById("body"),
+    body = document.getElementsByName('body'),
     titulo = document.getElementById("titulo"),
     conFecha = document.getElementById("contenedorFecha"),
     conHora = document.getElementById("contenedorHora"),
@@ -92,7 +93,7 @@ function cambiarModoOscuro() {
   volver.style.color= "#14731C";
 
   cuerpo.style.backgroundImage = "url('./source/noche.jpg')";
-  
+  body.style.background = linear-gradient(rgb(0, 38, 91),rgb(229, 230, 232)) ;
 }
 
 function cambiarModoClaro() {
