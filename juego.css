@@ -13,7 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: flex;
+    flex-direction:column;
 }
 
 #imagen{
@@ -25,6 +25,7 @@ body{
 
 #titulo{
     font-size: 3em;
+    
 }
 
 #resultado{
@@ -41,6 +42,13 @@ p{
 
 #ganar{
     background-color: antiquewhite;
+    width: 50%;
+    height: 75%;
+}
+
+img{
+    width: 80%;
+    height: 80%;
 }
 
 button {
